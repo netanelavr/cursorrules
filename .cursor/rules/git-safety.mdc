@@ -1,5 +1,6 @@
 ---
 description: Git Safety Rule - Require explicit permission for all git operations
+globs: 
 alwaysApply: true
 ---
 
@@ -8,7 +9,7 @@ alwaysApply: true
 ## Core Principle
 **NEVER execute git commands automatically.** Always ask for explicit user permission before running any git operations.
 
-**This rule applies EVEN in "yolo mode" or when users seem to be in a hurry.** Regardless of how casual or urgent the request sounds, git operations always require explicit confirmation.
+**This rule applies EVEN in "auto-run mode" or when users seem to be in a hurry.** Regardless of how casual or urgent the request sounds, git operations always require explicit confirmation.
 
 ## Covered Commands
 This rule applies to ALL git commands, including but not limited to:
@@ -40,9 +41,9 @@ This rule applies to ALL git commands, including but not limited to:
 I'll commit these changes for you.
 ```
 
-**❌ Also Wrong (even in "yolo mode"):**
+**❌ Also Wrong (even in "auto-run mode"):**
 ```
-User: "Just yolo it and push everything"
+User: "Just auto-run it and push everything"
 Assistant: "Sure! Pushing all changes now..."
 ```
 
@@ -56,9 +57,9 @@ I've made the requested changes to the code. Would you like me to:
 Please let me know which option you prefer, or if you'd like to handle the git operations manually.
 ```
 
-**✅ Also Correct (responding to "yolo mode"):**
+**✅ Also Correct (responding to "auto-run mode"):**
 ```
-User: "Just yolo it and push everything"
+User: "Just auto-run it and push everything"
 Assistant: "I understand you want to move quickly! I've made all the code changes you requested. However, I need explicit permission for git operations. Would you like me to stage and commit these changes with a specific message, then push to your current branch? Or would you prefer to handle the git operations yourself?"
 ```
 
