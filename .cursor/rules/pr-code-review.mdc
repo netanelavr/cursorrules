@@ -5,7 +5,7 @@ alwaysApply: false
 ---
 ---
 description: >
-  Code review rule for pre-PR analysis. Challenges architectural decisions, examines
+  Code review rule for PR analysis. Challenges architectural decisions, examines
   the diff with the default branch, and provides comprehensive feedback on code
   quality, security, performance, and maintainability before publishing.
 globs:

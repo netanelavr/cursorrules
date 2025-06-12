@@ -21,9 +21,9 @@ The AI will:
 
 This ensures you maintain full control over your version control workflow.
 
-## Pre-PR Code Review Rule
+## PR Code Review Rule
 
-The **Pre-PR Code Review Rule** (`pr-code-review`) provides comprehensive code review analysis before publishing pull requests:
+The **PR Code Review Rule** (`pr-code-review`) provides comprehensive code review analysis before publishing pull requests:
 
 **🔍 Challenge-first mindset** - Questions architectural decisions, examines diffs against the default branch, and provides thorough feedback on code quality, security, performance, and maintainability.
 
