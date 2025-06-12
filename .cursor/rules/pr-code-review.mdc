@@ -1,17 +1,9 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: >
   Code review rule for PR analysis. Challenges architectural decisions, examines
   the diff with the default branch, and provides comprehensive feedback on code
   quality, security, performance, and maintainability before publishing.
 globs:
-  - "**/*.ts"
-  - "**/*.js"
-  - "**/*.py"
 alwaysApply: false
 questions:
   - "Why this approach? Is there a simpler way?"
