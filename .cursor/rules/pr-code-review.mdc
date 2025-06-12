@@ -21,7 +21,7 @@ questions:
   - "How will we maintain this over time?"
 ---
 
-# Pre-PR Code Review
+# PR Code Review
 
 Comprehensive code-review analysis before publishing a PR, combining architectural
 review with diff analysis against the default branch.
@@ -33,7 +33,7 @@ it should meet agreed-upon quality standards.
 
 ---
 
-## Pre-Review Analysis
+## Review Analysis
 
 ### 1. Change Scope
 - **Diff Analysis** — list files modified, added, or deleted versus the default branch  
