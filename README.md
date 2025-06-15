@@ -5,6 +5,13 @@ Simple rules - smarter Cursor
 
 This repository contains rules and guidelines for Cursor AI to ensure safer interactions when working with code and version control.
 
+## Table of Contents
+
+- [Git Safety Rule](#git-safety-rule) - Never execute git commands automatically
+- [PR Code Review Rule](#pr-code-review-rule) - Comprehensive code review analysis
+- [Documentation Location Rule](#documentation-location-rule) - Organize docs by purpose
+- [Usage](#usage) - How to activate the rules
+
 ## Git Safety Rule
 
 The **Git Safety Rule** (`.cursor/rules/git-safety.mdc`) establishes a critical safety protocol:
