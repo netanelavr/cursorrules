@@ -47,6 +47,25 @@ Automatically challenges code with key questions:
 
 This ensures high-quality, maintainable code that meets project standards.
 
+## Documentation Location Rule
+
+The **Documentation Location Rule** (`docs-location`) establishes clear guidelines for where documentation should be placed:
+
+**📂 Organize docs by purpose** - Technical design documents go in the central docs/ folder, while feature READMEs stay with their code.
+
+### Documentation Structure
+
+The rule enforces:
+1. **Technical design documents** must be created in the **docs/** folder at the repository root
+2. **Feature README files** must be placed next to the relevant feature code, not in docs/
+
+### Rationale
+
+- **Centralized design docs** in docs/ keeps them discoverable for architectural decisions
+- **Co-located feature READMEs** help developers find usage and setup information in context with the code
+
+This ensures documentation is both discoverable and contextually relevant.
+
 ## Usage
 
 Place the rules from this repository in your `.cursor/` directory to activate them for your Cursor AI sessions.
