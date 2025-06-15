@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: >
   Require technical design docs in docs/ and feature README files next to their code.
 alwaysApply: true
