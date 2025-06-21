@@ -10,68 +10,32 @@ This repository contains rules and guidelines for Cursor AI to ensure safer inte
 - [Git Safety Rule](#git-safety-rule) - Never execute git commands automatically
 - [PR Code Review Rule](#pr-code-review-rule) - Comprehensive code review analysis
 - [Documentation Location Rule](#documentation-location-rule) - Organize docs by purpose
+- [MCP Tool Definition Rule](#mcp-tool-definition-rule) - Guidelines for MCP tool documentation
 - [Usage](#usage) - How to activate the rules
 
 ## Git Safety Rule
 
-The **Git Safety Rule** (`.cursor/rules/git-safety.mdc`) establishes a critical safety protocol:
+The **Git Safety Rule** (`.cursor/rules/git-safety.mdc`) ensures AI never executes git commands automatically.
 
-**🛡️ Never execute git commands automatically** - The AI must always ask for explicit user permission before running any git operations.
-
-### How It Works
-
-The AI will:
-1. **Ask for explicit permission** before any git operation
-2. **Explain the action** and why it's needed  
-3. **Wait for confirmation** before proceeding
-4. **Provide alternatives** when possible
-
-This ensures you maintain full control over your version control workflow.
+**🛡️ Never execute git commands automatically** - The AI must always ask for explicit permission before running any git operations, explain the action, wait for confirmation, and provide alternatives when possible.
 
 ## PR Code Review Rule
 
-The **PR Code Review Rule** (`pr-code-review`) provides comprehensive code review analysis before publishing pull requests:
+The **PR Code Review Rule** (`pr-code-review`) provides comprehensive code review analysis before publishing pull requests.
 
-**🔍 Challenge-first mindset** - Questions architectural decisions, examines diffs against the default branch, and provides thorough feedback on code quality, security, performance, and maintainability.
-
-### Key Review Areas
-
-The AI will analyze:
-1. **Change Scope** - Diff analysis, impact assessment, breaking changes
-2. **Architecture & Design** - Patterns, abstractions, SOLID principles
-3. **Code Quality** - Naming, complexity, error handling, documentation
-4. **Performance & Security** - Bottlenecks, vulnerabilities, resource management
-5. **Testing & APIs** - Coverage, compatibility, deployment safety
-
-### Review Questions
-
-Automatically challenges code with key questions:
-- Why this approach? Is there a simpler way?
-- What are the trade-offs? What are we sacrificing?
-- What could go wrong? Failure modes and edge cases?
-- How will this scale with 10× load/data/users?
-- How will we maintain this over time?
-
-This ensures high-quality, maintainable code that meets project standards.
+**🔍 Challenge-first mindset** - Questions architectural decisions, examines diffs against the default branch, and provides thorough feedback on code quality, security, performance, and maintainability. Automatically challenges code with questions like "Why this approach?", "What are the trade-offs?", and "How will this scale?"
 
 ## Documentation Location Rule
 
-The **Documentation Location Rule** (`docs-location`) establishes clear guidelines for where documentation should be placed:
+The **Documentation Location Rule** (`docs-location`) establishes clear guidelines for where documentation should be placed.
 
-**📂 Organize docs by purpose** - Technical design documents go in the central docs/ folder, while feature READMEs stay with their code.
+**📂 Organize docs by purpose** - Technical design documents go in the central docs/ folder, while feature READMEs stay with their code. This keeps design docs discoverable while maintaining contextual relevance for feature documentation.
 
-### Documentation Structure
+## MCP Tool Definition Rule
 
-The rule enforces:
-1. **Technical design documents** must be created in the **docs/** folder at the repository root
-2. **Feature README files** must be placed next to the relevant feature code, not in docs/
+The **MCP Tool Definition Rule** (`mcp-tool-definition`) provides guidelines for documenting MCP Server tools.
 
-### Rationale
-
-- **Centralized design docs** in docs/ keeps them discoverable for architectural decisions
-- **Co-located feature READMEs** help developers find usage and setup information in context with the code
-
-This ensures documentation is both discoverable and contextually relevant.
+**📋 Clear tool documentation** - Establishes a standardized structure for describing MCP tools with outcome-focused titles (e.g., "Analyze Stock Performance Metrics" not "Stock Analysis Tool") and comprehensive descriptions covering what it is, what it does, when to use it, and what it returns.
 
 ## Usage
 
