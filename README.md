@@ -38,6 +38,12 @@ The **MCP Tool Definition Rule** (`mcp-tool-definition`) provides guidelines for
 
 **📋 Clear tool documentation** - Establishes a standardized structure for describing MCP tools with outcome-focused titles (e.g., "Analyze Stock Performance Metrics" not "Stock Analysis Tool") and comprehensive descriptions covering what it is, what it does, when to use it, and what it returns.
 
+## Feature Implementation Rule
+
+The **Feature Implementation Rule** (`feature-implementation`) provides a structured 4-phase methodology for implementing complex features.
+
+**🏗️ Planning before implementation** - Requires complete discovery, analysis, and planning phases before any code is written. Mandates creating comprehensive planning documents and obtaining explicit user approval before implementation begins. Ensures deep codebase understanding, design system integration, and thorough task breakdown.
+
 ## Usage
 
 Place the rules from this repository in your `.cursor/` directory to activate them for your Cursor AI sessions.
